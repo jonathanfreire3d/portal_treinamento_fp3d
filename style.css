@@ -1,0 +1,313 @@
+/*@import url(plugin.css);*/
+:root{
+	--barra-nave-a: #b1b0b079;
+	--barra-nave-b: #7c0303;
+	--fundo: #FFFFFF;
+	--pagina: #e5e2e2;
+	--titulo: #ccc9c9;
+	--sombra:#00000078;
+	--fundo-dropdown:#e7e4e4;
+	--texto-padrao:#000000;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	background-image: url(imagem/logo10.png);
+}
+header {
+	background: linear-gradient( 90deg ,var(--barra-nave-a) 40%, var(--barra-nave-b));
+	/* position: fixed; /* fixr cabeçalho*/
+	width: 100%;
+	box-shadow: 0 0 10px 10px var(--sombra) ;
+	background-repeat: no-repeat;
+	/* z-index: 1000; /* profundidade  fixa na frente*/
+}
+.caixa {
+	position: relative;
+	width: 75%;
+	margin: 0 auto;
+}
+nav {
+	position: absolute;
+	top: 30px;
+	right: 0;
+}
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+nav a {
+	text-transform: uppercase;
+	color: var(--fundo);
+	/*font-weight: bold;*/
+	font-size: 20px;
+	text-decoration: none;
+}
+/*
+nav a:hover {
+	color: #650606;
+	text-decoration: underline;
+} 
+*/
+/* Dropdown Button */
+.dropbtn {
+	background: none;
+	color: var(--fundo);
+	padding: 0.3em;
+	font-size: 20px;
+	text-decoration: none;
+	transition: 700ms;
+	border: 2px solid var(--pagina);
+	border-radius: 5px;
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: var(--fundo-dropdown);
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px var(--sombra);
+	z-index: 1;
+	font-size: 10px;
+	border-radius: 6px;
+  }
+  /* Links inside the dropdown */
+  .dropdown-content a {
+	color: var(--texto-padrao);
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	font-size: 16px;
+  }
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color:var(--titulo);}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+	font-size: 22px;
+}
+/* css da página inicial */
+.principal {
+	padding: 3em 1em;
+	background: var(--pagina);
+	box-shadow: 0 10px 10px 0 var(--sombra);
+	width: 75%;
+	margin: 0 auto;
+}
+.principal p {
+	margin: 1em 0 0.5em;
+}
+.titulo-principal {
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: bold;
+	margin: 0 0 1em;
+	clear: left;	
+	border: 1px solid var(--titulo);
+	background: var(--titulo);
+	border-radius: 6px;
+	padding: 10px;
+	box-shadow: 0 5px 5px 0 var(--sombra) ;
+}
+.paginicial {
+	text-align: right;
+	padding: 0 10px;
+	font-weight: bold;
+	display: block;
+	width: 33%;
+	position : relative;
+	float: right;
+	text-decoration: none;
+}
+.paginicial__texto  {
+	text-align: center;
+	padding: 5px 5px;
+	font-weight: bold;
+	transition: 1000ms;
+	text-decoration: none;
+	border: 1px solid var(--titulo);
+	background: var(--titulo);
+	border-radius: 5px;
+	box-shadow: 0 5px 5px 0 var(--sombra) ;
+}
+.paginicial a {
+	color: var(--barra-nave-b);
+	font-weight: bold;
+}
+.paginicial__texto:before  {
+	content:"⮭";
+	margin: 1% 1%;
+}
+.paginicial:hover {
+	font-size: 1.5em;
+}
+.titulo-principal2{
+	font-size: 1.5em;
+	padding: 1em 10px;
+	text-align: left;
+	font-weight: bold;
+}
+.titulo-principal2:before {
+	content: "➦";
+	margin: 1% 1%;
+}
+.descricao {
+	text-align: center;
+	clear: left;	
+	/* border: 1px solid #000000;*/
+	border-radius: 6px;
+	padding: 0 10%;
+	letter-spacing: 1px;
+}
+p strong  {
+	font-weight: bold;	
+}
+/* p:last-child percorre para o ultimo paragrafo, first-child primeiro paragrafo e :nth-child(5) paragrafo desejado*/
+/* h2 ~ p:last-child {
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.5em; 
+*/
+.linksistema  {
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.5em;
+}
+.linksistema a {
+	color: var(--texto-padrao);
+	text-decoration: none;
+	transition: 1000ms;
+}
+
+.linksistema a:hover {
+	text-decoration: none;
+	color:var(--barra-nave-b); 
+	font-size: 1.5em;
+}
+.videoabaixo div {
+	visibility: hidden;
+}
+
+.videoabaixo:after {
+    visibility: visible;
+	font-weight: bold;
+	text-decoration: underline;
+	content: "👇 Veja no vídeo abaixo.";
+	display: block;
+	text-align: center;
+	padding: 1em 0 0;
+}
+.video {
+	width: 65%;
+	margin: 1em auto 6em ;
+	box-shadow: 0 0 5px 2px var(--sombra) ;
+}
+.imagem-texto {
+	display: block;
+	width: 50%;
+	height: auto;
+	margin: 1em auto;
+	align-items: center;
+}
+img {
+	width:150px;
+	height:80px;
+	/*box-shadow: 0 0 5px 0 #00000076 ;
+	*/
+}
+.logo, .img-rdp {
+	filter: drop-shadow( 1px 1px 1px rgb(22, 22, 22)	);
+}
+.ferramentas__lista {
+	display: flex;
+	flex-wrap: wrap; /* pra quebrar  os itens alinhando do tamanho da tela */
+	justify-content: center;
+	margin: auto;
+	padding: 0 10%;
+}
+.ferramentas__lista-item {
+	padding: 0.5em;
+	border: 1px solid var(--barra-nave-a);
+	border-radius: 5px;
+	margin: 3px;
+	box-shadow: 0 0 4px 0px var(--sombra);
+}
+@media screen and (max-width: 835px) {
+	.caixa, .principal, .video {
+		width: auto;
+		padding: 10px;
+		text-align: center;
+		/*display: inline-block; */
+		font-size: 12px;
+	}
+	.paginicial__texto {
+		width: auto;
+		padding: 5px;
+		text-align: center;
+		display: block;
+		font-size: 12px;
+		margin-top: 1em;
+	}
+	.videoabaixo {
+		width: auto;
+		text-align: center;
+		display: block;
+		font-size: 12px;
+	}
+	.titulo-principal {
+		margin: 0 5px;
+	}
+	
+	.paginicial__texto:hover {
+		font-size: 1em;
+	}
+	.titulo-principal2 {
+		
+		padding: 10px;
+		font-size: 1.5em;
+	}
+	.descricao {
+		text-align: center;
+		clear: left;	
+		/* border: 1px solid #000000;*/
+		border-radius: 6px;
+		padding: 5px 10px;
+	}
+	nav {
+		position: static;
+	}
+	.dropbtn {
+		margin: 0.2em 0.6em;
+	}
+	.imagem-texto {
+		width: 100%;
+	}
+	.ferramentas__lista {
+		padding: 0 10px;
+	}
+}
+footer {
+	text-align: center;
+	background: url("imagem/bg.jpg");
+	padding: 10px 0;
+}
+.copyright {
+	color: var(--fundo);
+	font-size: 13px;
+	margin: 5px 0 0;
+}
+.img-rdp {
+	width: 35px;
+	height: 30px;
+	align-items: center;
+}
