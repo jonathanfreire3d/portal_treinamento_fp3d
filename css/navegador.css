@@ -3,7 +3,7 @@
 	justify-content: space-between;
 	align-items: center;
 	background: linear-gradient( 90deg,var(--cor-cinza) 45%,var(--cor-vermelho));
-	height: 80px;
+
         width: 100%;
 }
 .cabecalho__logo {
