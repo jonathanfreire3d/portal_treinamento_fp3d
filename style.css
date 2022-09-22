@@ -19,6 +19,7 @@ html {
 body {
 	font-family: 'Roboto', sans-serif;
 	background-image: url(imagem/logo10.png);
+	width:100% ;
 }
 
 footer {
