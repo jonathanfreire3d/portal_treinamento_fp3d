@@ -4,6 +4,7 @@
 	align-items: center;
 	background: linear-gradient( 90deg,var(--cor-cinza) 45%,var(--cor-vermelho));
 	height: 80px;
+        width: 100%;
 }
 .cabecalho__logo {
 	filter: drop-shadow( 1px 1px 1px rgb(22, 22, 22)	);
