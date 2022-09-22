@@ -1,4 +1,4 @@
-/*@media screen and (max-width: 736px){
+@media screen and (max-width: 736px){
 	.cabecalho__logo__primaria {
 		display: none;
 	}
@@ -11,7 +11,7 @@
 		margin: 5px;
 	}
 }
-*/
+
 @media screen and (max-width: 736px) {
     .secao {
         margin: 1rem;

@@ -4,34 +4,34 @@
 	align-items: center;
 	background: linear-gradient( 90deg,var(--cor-cinza) 45%,var(--cor-vermelho));
 
-        width: 100%;
+    width: 100%;
 }
 .cabecalho__logo {
 	filter: drop-shadow( 1px 1px 1px rgb(22, 22, 22)	);
 }
 .cabecalho__logo__primaria {
     width: 250px;
-	margin-left: 2rem;
+	margin-left: 2em;
 }
 .cabecalho__logo__secundaria {
 	display: none;
 }
 .cabecalho__menu > .conteiner{
 	display: flex;
-	margin: 2rem;
+	margin: 2em;
 	align-items: center;
-	margin: auto 2rem auto auto;
+	margin: auto 2em auto auto;
 }
 .menu__lista  {
 	position: relative;
 	text-transform: uppercase;
 }
 .menu__lista__titulo{
-	padding: 1rem;
+	padding: 1em;
 	border: 1px solid var(--cor-cinza);
-	margin-left: 0.5rem;
+	margin-left: 0.5em;
 	transition: 700ms;
-	border-radius: 0.5rem;
+	border-radius: 0.5em;
 	box-shadow: 0 1px 2px 2px var(--sombra); /*sombra externa do botão*/
 	color: var(--cor-texto-botao);
 	font-size: 16px;
@@ -44,7 +44,7 @@
 	flex-direction: column;
 	position: absolute;
 	border: 1px solid var(--cor-cinza);
-	border-radius: 0.5rem;
+	border-radius: 0.5em;
 	background-color: var(--fundo-dropdown);
 	z-index: 7; /* move pra frente ou para trás nas camadas */
 }
@@ -61,8 +61,8 @@
 	background-color: var(--fundo-dropdown);
 	text-decoration: none;
 	color: var(--texto-padrao);
-	padding: 1rem;
-	border-radius: 0.5rem;
+	padding: 1em;
+	border-radius: 0.5em;
 	text-align: center;
 }
 .menu__link:hover {
